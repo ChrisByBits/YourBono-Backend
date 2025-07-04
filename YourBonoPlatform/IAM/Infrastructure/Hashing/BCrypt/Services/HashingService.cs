@@ -1,7 +1,7 @@
-using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
+using YourBonoPlatform.IAM.Application.Internal.OutboundServices;
 using BCryptNet = BCrypt.Net.BCrypt;
 
-namespace AlquilaFacilPlatform.IAM.Infrastructure.Hashing.BCrypt.Services;
+namespace YourBonoPlatform.IAM.Infrastructure.Hashing.BCrypt.Services;
 
 /**
  * <summary>

@@ -1,10 +1,9 @@
 using System.Text;
-using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
-using AlquilaFacilPlatform.Shared.Infrastructure.Endpoints;
+using YourBonoPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Extensions;
+namespace YourBonoPlatform.IAM.Infrastructure.Pipeline.Middleware.Extensions;
 
 public static class AuthenticationServiceExtensions
 {
@@ -29,24 +28,6 @@ public static class AuthenticationServiceExtensions
                     ValidateIssuer = false,
                     ValidateAudience = false,
                     ClockSkew = TimeSpan.Zero
-                };
-                // Added to handle SignalR connections
-                options.Events = new JwtBearerEvents
-                {
-                    OnMessageReceived = context =>
-                    {
-                        var accessToken = context.Request.Query["access_token"];
-                        var path = context.HttpContext.Request.Path;
-
-                        // Verifies if the access token is present in the query string
-                        if (!string.IsNullOrEmpty(accessToken) &&
-                            path.StartsWithSegments(SignalRRoutes.ReadingHub))
-                        {
-                            context.Token = accessToken;
-                        }
-
-                        return Task.CompletedTask;
-                    }
                 };
             });
 

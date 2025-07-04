@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.Shared.Domain.Repositories;
+namespace YourBonoPlatform.Shared.Domain.Repositories;
 
 public interface IUnitOfWork
 {

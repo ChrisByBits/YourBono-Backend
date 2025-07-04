@@ -1,5 +1,5 @@
-using AlquilaFacilPlatform.Shared.Application.Internal.OutboundServices;
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.Shared.Application.Internal.OutboundServices;
+using YourBonoPlatform.Shared.Domain.Repositories;
 using YourBonoPlatform.Bonds.Domain.Model.Aggregates;
 using YourBonoPlatform.Bonds.Domain.Model.Commands;
 using YourBonoPlatform.Bonds.Domain.Repositories;

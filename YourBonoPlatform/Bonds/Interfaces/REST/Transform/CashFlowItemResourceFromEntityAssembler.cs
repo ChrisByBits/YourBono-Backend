@@ -3,7 +3,7 @@ using YourBonoPlatform.Bonds.Interfaces.REST.Resources;
 
 namespace YourBonoPlatform.Bonds.Interfaces.REST.Transform;
 
-public static class CashFlowItemFromEntityAssembler
+public static class CashFlowItemResourceFromEntityAssembler
 {
     public static CashFlowItemResource ToResourceFromEntity(CashFlowItem entity)
     {

@@ -6,6 +6,28 @@ namespace YourBonoPlatform.Bonds.Domain.Model.Aggregates;
 
 public class Bond
 {
+    public Bond()
+    {
+        UserId = 0;
+        Name = string.Empty;
+        NominalValue = 0.0;
+        MarketValue = 0.0;
+        Duration = 0;
+        Frequency = 0;
+        InterestRateTypeId = 0;
+        InterestRate = 0.0;
+        Capitalization = 0;
+        DiscountRate = 0.0;
+        EmissionDate = DateTime.MinValue;
+        GracePeriodTypeId = 0;
+        GracePeriodDuration = 0;
+        CurrencyTypeId = 0;
+        PrimeRate = 0.0;
+        StructuredRate = 0.0;
+        PlacementRate = 0.0;
+        FloatingRate = 0.0;
+        CavaliRate = 0.0;
+    }
     public Bond(CreateBondCommand command)
     {
         UserId = command.UserId;

@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.IAM.Domain.Model.Commands;
+namespace YourBonoPlatform.IAM.Domain.Model.Commands;
 
 public record SignUpCommand(
     string Username,

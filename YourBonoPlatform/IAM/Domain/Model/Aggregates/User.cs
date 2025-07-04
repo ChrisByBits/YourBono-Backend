@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using AlquilaFacilPlatform.IAM.Domain.Model.ValueObjects;
+using YourBonoPlatform.IAM.Domain.Model.ValueObjects;
 
-namespace AlquilaFacilPlatform.IAM.Domain.Model.Aggregates
+namespace YourBonoPlatform.IAM.Domain.Model.Aggregates
 {
     public class User
     {

@@ -1,11 +1,11 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Entities;
-using AlquilaFacilPlatform.IAM.Domain.Model.ValueObjects;
-using AlquilaFacilPlatform.IAM.Domain.Repositories;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
+using YourBonoPlatform.IAM.Domain.Model.Entities;
+using YourBonoPlatform.IAM.Domain.Model.ValueObjects;
+using YourBonoPlatform.IAM.Domain.Repositories;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace AlquilaFacilPlatform.IAM.Infrastructure.Persistence.EFC.Respositories;
+namespace YourBonoPlatform.IAM.Infrastructure.Persistence.EFC.Respositories;
 
 public class UserRoleRepository(AppDbContext context) : BaseRepository<UserRole>(context), IUserRoleRepository
 {

@@ -4,7 +4,7 @@ public record UpdateBondResource(
     string Name,
     double NominalValue,
     double MarketValue,
-    double Duration,
+    int Duration,
     int Frequency,
     int InterestRateTypeId,
     double InterestRate,

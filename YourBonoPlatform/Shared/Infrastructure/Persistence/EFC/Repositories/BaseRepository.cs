@@ -1,8 +1,8 @@
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
+using YourBonoPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity>
     where TEntity : class

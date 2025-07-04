@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.IAM.Interfaces.ACL;
+namespace YourBonoPlatform.IAM.Interfaces.ACL;
 
 public interface IIamContextFacade
 {

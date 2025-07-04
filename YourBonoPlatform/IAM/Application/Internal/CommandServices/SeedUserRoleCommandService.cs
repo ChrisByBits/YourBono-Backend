@@ -1,11 +1,11 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Commands;
-using AlquilaFacilPlatform.IAM.Domain.Model.Entities;
-using AlquilaFacilPlatform.IAM.Domain.Model.ValueObjects;
-using AlquilaFacilPlatform.IAM.Domain.Repositories;
-using AlquilaFacilPlatform.IAM.Domain.Services;
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.IAM.Domain.Model.Commands;
+using YourBonoPlatform.IAM.Domain.Model.Entities;
+using YourBonoPlatform.IAM.Domain.Model.ValueObjects;
+using YourBonoPlatform.IAM.Domain.Repositories;
+using YourBonoPlatform.IAM.Domain.Services;
+using YourBonoPlatform.Shared.Domain.Repositories;
 
-namespace AlquilaFacilPlatform.IAM.Application.Internal.CommandServices;
+namespace YourBonoPlatform.IAM.Application.Internal.CommandServices;
 
 public class SeedUserRoleCommandService(IUserRoleRepository repository, IUnitOfWork unitOfWork) : ISeedUserRoleCommandService
 {

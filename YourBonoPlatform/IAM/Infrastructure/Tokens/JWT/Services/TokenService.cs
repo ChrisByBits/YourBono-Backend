@@ -1,14 +1,14 @@
 using System.Security.Claims;
 using System.Text;
-using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Domain.Model.ValueObjects;
-using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
+using YourBonoPlatform.IAM.Application.Internal.OutboundServices;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.IAM.Domain.Model.ValueObjects;
+using YourBonoPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Services;
+namespace YourBonoPlatform.IAM.Infrastructure.Tokens.JWT.Services;
 
 public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
 {

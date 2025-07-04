@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+namespace YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
 public static class ModelBuilderExtensions
 {

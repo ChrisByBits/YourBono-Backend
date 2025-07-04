@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
+namespace YourBonoPlatform.IAM.Application.Internal.OutboundServices;
 
 public interface IHashingService
 {

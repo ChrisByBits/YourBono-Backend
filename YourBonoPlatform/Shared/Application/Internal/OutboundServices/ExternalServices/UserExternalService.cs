@@ -1,6 +1,6 @@
-using AlquilaFacilPlatform.IAM.Interfaces.ACL;
+using YourBonoPlatform.IAM.Interfaces.ACL;
 
-namespace AlquilaFacilPlatform.Shared.Application.Internal.OutboundServices.ExternalServices;
+namespace YourBonoPlatform.Shared.Application.Internal.OutboundServices.ExternalServices;
 
 public class UserExternalService(IIamContextFacade iamContextFacade) : IUserExternalService
 {

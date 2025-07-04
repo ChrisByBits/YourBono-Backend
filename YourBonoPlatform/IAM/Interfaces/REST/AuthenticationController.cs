@@ -1,10 +1,10 @@
 using System.Net.Mime;
-using AlquilaFacilPlatform.IAM.Domain.Services;
-using AlquilaFacilPlatform.IAM.Interfaces.REST.Resources;
-using AlquilaFacilPlatform.IAM.Interfaces.REST.Transform;
+using YourBonoPlatform.IAM.Domain.Services;
+using YourBonoPlatform.IAM.Interfaces.REST.Resources;
+using YourBonoPlatform.IAM.Interfaces.REST.Transform;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AlquilaFacilPlatform.IAM.Interfaces.REST;
+namespace YourBonoPlatform.IAM.Interfaces.REST;
 
 
 [ApiController]

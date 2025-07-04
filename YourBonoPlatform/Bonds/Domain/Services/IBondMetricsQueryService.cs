@@ -5,5 +5,5 @@ namespace YourBonoPlatform.Bonds.Domain.Services;
 
 public interface IBondMetricsQueryService
 {
-    Task<BondMetrics> Handle(GetBondMetricsByBondIdQuery query);
+    Task<BondMetrics?> Handle(GetBondMetricsByBondIdQuery query);
 }

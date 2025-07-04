@@ -1,8 +1,8 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Entities;
-using AlquilaFacilPlatform.IAM.Domain.Model.ValueObjects;
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.IAM.Domain.Model.Entities;
+using YourBonoPlatform.IAM.Domain.Model.ValueObjects;
+using YourBonoPlatform.Shared.Domain.Repositories;
 
-namespace AlquilaFacilPlatform.IAM.Domain.Repositories;
+namespace YourBonoPlatform.IAM.Domain.Repositories;
 
 public interface IUserRoleRepository : IBaseRepository<UserRole>
 {

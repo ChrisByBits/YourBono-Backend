@@ -1,10 +1,10 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Domain.Repositories;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.IAM.Domain.Repositories;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace AlquilaFacilPlatform.IAM.Infrastructure.Persistence.EFC.Respositories;
+namespace YourBonoPlatform.IAM.Infrastructure.Persistence.EFC.Respositories;
 
 /**
  * <summary>

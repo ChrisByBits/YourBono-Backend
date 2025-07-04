@@ -1,7 +1,7 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Interfaces.REST.Resources;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.IAM.Interfaces.REST.Resources;
 
-namespace AlquilaFacilPlatform.IAM.Interfaces.REST.Transform;
+namespace YourBonoPlatform.IAM.Interfaces.REST.Transform;
 
 public static class AuthenticatedUserResourceFromEntityAssembler
 {

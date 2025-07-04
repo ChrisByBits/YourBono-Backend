@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.Shared.Application.Internal.OutboundServices;
+namespace YourBonoPlatform.Shared.Application.Internal.OutboundServices;
 
 public interface IUserExternalService
 {

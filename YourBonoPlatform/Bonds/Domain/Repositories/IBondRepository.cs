@@ -1,4 +1,4 @@
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.Shared.Domain.Repositories;
 using YourBonoPlatform.Bonds.Domain.Model.Aggregates;
 
 namespace YourBonoPlatform.Bonds.Domain.Repositories;

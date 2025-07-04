@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.IAM.Domain.Model.ValueObjects;
+namespace YourBonoPlatform.IAM.Domain.Model.ValueObjects;
 
 public enum EUserRoles
 {

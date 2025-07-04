@@ -1,6 +1,6 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Commands;
+using YourBonoPlatform.IAM.Domain.Model.Commands;
 
-namespace AlquilaFacilPlatform.IAM.Domain.Services;
+namespace YourBonoPlatform.IAM.Domain.Services;
 
 public interface ISeedUserRoleCommandService
 {

@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.IAM.Domain.Model.Entities;
+namespace YourBonoPlatform.IAM.Domain.Model.Entities;
 
 public partial class UserRole
 {

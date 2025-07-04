@@ -1,8 +1,8 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Commands;
-using AlquilaFacilPlatform.IAM.Domain.Model.Queries;
-using AlquilaFacilPlatform.IAM.Domain.Services;
+using YourBonoPlatform.IAM.Domain.Model.Commands;
+using YourBonoPlatform.IAM.Domain.Model.Queries;
+using YourBonoPlatform.IAM.Domain.Services;
 
-namespace AlquilaFacilPlatform.IAM.Interfaces.ACL.Service;
+namespace YourBonoPlatform.IAM.Interfaces.ACL.Service;
 
 public class IamContextFacade(IUserCommandService userCommandService, IUserQueryService userQueryService) : IIamContextFacade
 {

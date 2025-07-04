@@ -1,5 +1,5 @@
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 using YourBonoPlatform.Bonds.Domain.Model.Entities;
 using YourBonoPlatform.Bonds.Domain.Repositories;

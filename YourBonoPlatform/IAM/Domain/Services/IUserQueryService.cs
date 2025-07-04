@@ -1,7 +1,7 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Domain.Model.Queries;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.IAM.Domain.Model.Queries;
 
-namespace AlquilaFacilPlatform.IAM.Domain.Services;
+namespace YourBonoPlatform.IAM.Domain.Services;
 
 public interface IUserQueryService
 {

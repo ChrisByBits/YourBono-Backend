@@ -1,4 +1,4 @@
-namespace AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
+namespace YourBonoPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
 
 public class TokenSettings
 {

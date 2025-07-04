@@ -1,7 +1,7 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.Shared.Domain.Repositories;
 
-namespace AlquilaFacilPlatform.IAM.Domain.Repositories;
+namespace YourBonoPlatform.IAM.Domain.Repositories;
 
 public interface IUserRepository : IBaseRepository<User>
 {

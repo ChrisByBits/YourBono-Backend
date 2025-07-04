@@ -1,8 +1,10 @@
 using System.Net.Mime;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using YourBonoPlatform.Bonds.Domain.Model.Commands;
 using YourBonoPlatform.Bonds.Domain.Model.Queries;
 using YourBonoPlatform.Bonds.Domain.Services;
+using YourBonoPlatform.Bonds.Interfaces.REST.Resources;
 using YourBonoPlatform.Bonds.Interfaces.REST.Transform;
 
 namespace YourBonoPlatform.Bonds.Interfaces.REST;
@@ -11,8 +13,12 @@ namespace YourBonoPlatform.Bonds.Interfaces.REST;
 [ApiController]
 [Route("api/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
-public class BondsController(IBondQueryService bondQueryService, 
-                            IBondCommandService bondCommandService): ControllerBase
+public class BondsController(
+    IBondQueryService bondQueryService, 
+    IBondCommandService bondCommandService,
+    ICashFlowItemQueryService cashFlowItemQueryService,
+    IBondMetricsQueryService bondMetricsQueryService
+    ): ControllerBase
 {
     [HttpGet("user-id/{userId:int}")]
     public async Task<IActionResult> GetBondsByUserId(int userId)
@@ -36,18 +42,62 @@ public class BondsController(IBondQueryService bondQueryService,
         return Ok(bondResource);
     }
     
-    [HttpGet("cash-flow/{id:int}")]
-    public async Task<IActionResult> GetBondCashFlowById(int id)
+    [HttpGet("get-cash-flow/{bondId:int}")]
+    public async Task<IActionResult> GetCashFlowByBondId(int bondId)
     {
-        var query = new GetCashFlowByBondIdQuery(id);
-        var cashFlow = await bondQueryService.Handle(query);
-        if (cashFlow == null)
+        var query = new GetCashFlowByBondIdQuery(bondId);
+        var cashFlows = await cashFlowItemQueryService.Handle(query);
+        var cashFlowResources = cashFlows.Select(CashFlowItemResourceFromEntityAssembler.ToResourceFromEntity);
+        return Ok(cashFlows);
+    }
+    
+    [HttpGet("get-bond-metrics/{bondId:int}")]
+    public async Task<IActionResult> GetBondMetricsByBondId(int bondId)
+    {
+        var query = new GetBondMetricsByBondIdQuery(bondId);
+        var bondMetrics = await bondMetricsQueryService.Handle(query);
+        if (bondMetrics == null)
         {
             return NotFound();
         }
-        return Ok(cashFlow);
+        var bondMetricsResource = BondMetricsResourceFromEntityAssembler.ToResourceFromEntity(bondMetrics);
+        return Ok(bondMetricsResource);
     }
     
+    [HttpPost]
+    public async Task<IActionResult> CreateBond([FromBody] CreateBondResource resource)
+    {
+        var command = CreateBondCommandFromResourceAssembler.ToCommandFromResource(resource);
+        var bond = await bondCommandService.Handle(command);
+        var bondResource = BondResourceFromEntityAssembler.ToResourceFromEntity(bond!);
+        return Ok(bondResource);
+    }
+    
+    [HttpPut("{id:int}")]
+    public async Task<IActionResult> UpdateBond(int id, [FromBody] UpdateBondResource resource)
+    {
+        var command = UpdateBondCommandFromResourceAssembler.ToCommandFromResource(id, resource);
+        var bond = await bondCommandService.Handle(command);
+        if (bond == null)
+        {
+            return NotFound();
+        }
+        var bondResource = BondResourceFromEntityAssembler.ToResourceFromEntity(bond!);
+        return Ok(bondResource);
+    }
+    
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> DeleteBond(int id)
+    {
+        var command = new DeleteBondCommand(id);
+        var bond = await bondCommandService.Handle(command);
+        if (bond == null)
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
     
     
 }

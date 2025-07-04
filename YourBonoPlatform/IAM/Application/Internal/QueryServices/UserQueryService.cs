@@ -1,9 +1,9 @@
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Domain.Model.Queries;
-using AlquilaFacilPlatform.IAM.Domain.Repositories;
-using AlquilaFacilPlatform.IAM.Domain.Services;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.IAM.Domain.Model.Queries;
+using YourBonoPlatform.IAM.Domain.Repositories;
+using YourBonoPlatform.IAM.Domain.Services;
 
-namespace AlquilaFacilPlatform.IAM.Application.Internal.QueryServices;
+namespace YourBonoPlatform.IAM.Application.Internal.QueryServices;
 
 public class UserQueryService (IUserRepository userRepository) : IUserQueryService
 {

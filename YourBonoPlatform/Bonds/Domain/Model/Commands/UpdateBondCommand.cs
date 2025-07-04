@@ -5,7 +5,7 @@ public record UpdateBondCommand(
     string Name,
     double NominalValue,
     double MarketValue,
-    double Duration,
+    int Duration,
     int Frequency,
     int InterestRateTypeId,
     double InterestRate,

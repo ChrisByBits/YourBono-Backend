@@ -1,7 +1,7 @@
-using AlquilaFacilPlatform.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
+using YourBonoPlatform.Shared.Interfaces.ASP.Configuration.Extensions;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace AlquilaFacilPlatform.Shared.Infrastructure.Interfaces.ASP.Configuration;
+namespace YourBonoPlatform.Shared.Interfaces.ASP.Configuration;
 
 public class KebabCaseRouteNamingConvention : IControllerModelConvention
 {

@@ -1,3 +1,3 @@
-namespace AlquilaFacilPlatform.IAM.Domain.Model.Queries;
+namespace YourBonoPlatform.IAM.Domain.Model.Queries;
 
 public record GetUsernameByIdQuery(int UserId);

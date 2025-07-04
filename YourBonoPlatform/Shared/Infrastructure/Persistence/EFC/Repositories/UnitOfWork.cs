@@ -1,7 +1,7 @@
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
+using YourBonoPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
 
-namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 public class UnitOfWork : IUnitOfWork
 {

@@ -1,12 +1,12 @@
-using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
-using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Domain.Model.Commands;
-using AlquilaFacilPlatform.IAM.Domain.Repositories;
-using AlquilaFacilPlatform.IAM.Domain.Services;
-using AlquilaFacilPlatform.Shared.Application.Internal.OutboundServices;
-using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using YourBonoPlatform.IAM.Application.Internal.OutboundServices;
+using YourBonoPlatform.IAM.Domain.Model.Aggregates;
+using YourBonoPlatform.IAM.Domain.Model.Commands;
+using YourBonoPlatform.IAM.Domain.Repositories;
+using YourBonoPlatform.IAM.Domain.Services;
+using YourBonoPlatform.Shared.Application.Internal.OutboundServices;
+using YourBonoPlatform.Shared.Domain.Repositories;
 
-namespace AlquilaFacilPlatform.IAM.Application.Internal.CommandServices;
+namespace YourBonoPlatform.IAM.Application.Internal.CommandServices;
 
 public class UserCommandService(
     IUserRepository userRepository,
