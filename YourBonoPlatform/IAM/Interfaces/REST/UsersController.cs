@@ -34,7 +34,7 @@ public class UsersController(
      * <param name="userId">The user id</param>
      * <returns>The user resource</returns>
      */
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     [HttpGet("{userId:int}")]
     public async Task<IActionResult> GetUserById(int userId)
     {
@@ -51,7 +51,7 @@ public class UsersController(
      * </summary>
      * <returns>The user resources</returns>
      */
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     [HttpGet]
     public async Task<IActionResult> GetAllUsers()
     {

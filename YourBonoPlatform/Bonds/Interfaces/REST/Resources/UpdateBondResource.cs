@@ -2,21 +2,21 @@ namespace YourBonoPlatform.Bonds.Interfaces.REST.Resources;
 
 public record UpdateBondResource(
     string Name,
-    double NominalValue,
-    double MarketValue,
+    decimal NominalValue,
+    decimal MarketValue,
     int Duration,
     int Frequency,
     int InterestRateTypeId,
-    double InterestRate,
+    decimal InterestRate,
     int Capitalization,
-    double DiscountRate,
+    decimal DiscountRate,
     DateTime EmissionDate,
     int GracePeriodTypeId,
     int GracePeriodDuration,
     int CurrencyTypeId,
-    double PrimeRate,
-    double StructuredRate,
-    double PlacementRate,
-    double FloatingRate,
-    double CavaliRate
+    decimal PrimeRate,
+    decimal StructuredRate,
+    decimal PlacementRate,
+    decimal FloatingRate,
+    decimal CavaliRate
 );

@@ -4,9 +4,9 @@ public class CashFlowItem
 {
     
     public CashFlowItem(int id, int bondId, int period, DateTime paymentDate, bool isGracePeriod,
-        double initialBalance, double interest, double amortization, double finalBalance, double totalPayment,
-        double issuerCashFlow, double bondHolderCashFlow, double presentCashFlow,
-        double presentCashFlowTimesPeriod, double convexityFactor)
+        decimal initialBalance, decimal interest, decimal amortization, decimal finalBalance, decimal totalPayment,
+        decimal issuerCashFlow, decimal bondHolderCashFlow, decimal presentCashFlow,
+        decimal presentCashFlowTimesPeriod, decimal convexityFactor)
     {
         Id = id;
         BondId = bondId;
@@ -30,15 +30,15 @@ public class CashFlowItem
     public int Period { get; private set; }
     public DateTime PaymentDate { get; private set; }
     public bool IsGracePeriod { get; private set; }
-    public double InitialBalance { get; private set; }
-    public double Interest { get; private set; }
-    public double Amortization { get; private set; }
-    public double FinalBalance { get; private set; }
-    public double TotalPayment { get; private set; }
-    public double IssuerCashFlow { get; private set; }
-    public double BondHolderCashFlow { get; private set; }
-    public double PresentCashFlow { get; private set; }
-    public double PresentCashFlowTimesPeriod { get; private set; }
-    public double ConvexityFactor { get; private set; }
+    public decimal InitialBalance { get; private set; }
+    public decimal Interest { get; private set; }
+    public decimal Amortization { get; private set; }
+    public decimal FinalBalance { get; private set; }
+    public decimal TotalPayment { get; private set; }
+    public decimal IssuerCashFlow { get; private set; }
+    public decimal BondHolderCashFlow { get; private set; }
+    public decimal PresentCashFlow { get; private set; }
+    public decimal PresentCashFlowTimesPeriod { get; private set; }
+    public decimal ConvexityFactor { get; private set; }
 
 }

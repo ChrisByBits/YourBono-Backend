@@ -82,7 +82,7 @@ public class BondsController(
         {
             return NotFound();
         }
-        var bondResource = BondResourceFromEntityAssembler.ToResourceFromEntity(bond!);
+        var bondResource = BondResourceFromEntityAssembler.ToResourceFromEntity(bond);
         return Ok(bondResource);
     }
     
@@ -96,7 +96,7 @@ public class BondsController(
             return NotFound();
         }
 
-        return NoContent();
+        return Ok("Bond deleted successfully.");
     }
     
     

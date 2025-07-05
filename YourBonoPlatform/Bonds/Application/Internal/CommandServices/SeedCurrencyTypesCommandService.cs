@@ -5,7 +5,7 @@ using YourBonoPlatform.Bonds.Domain.Repositories;
 using YourBonoPlatform.Bonds.Domain.Services;
 using YourBonoPlatform.Shared.Domain.Repositories;
 
-namespace YourBonoPlatform.Bonds.Application.Internal;
+namespace YourBonoPlatform.Bonds.Application.Internal.CommandServices;
 
 public class SeedCurrencyTypesCommandService(ICurrencyTypeRepository repository, IUnitOfWork unitOfWork) : ISeedCurrencyTypesCommandService
 {

@@ -18,7 +18,9 @@ using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
 using YourBonoPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using YourBonoPlatform.Bonds.Application.Internal;
+using YourBonoPlatform.Bonds.Application.Internal.CommandServices;
+using YourBonoPlatform.Bonds.Application.Internal.OutboundServices;
+using YourBonoPlatform.Bonds.Application.Internal.QueryServices;
 using YourBonoPlatform.Bonds.Domain.Model.Commands;
 using YourBonoPlatform.Bonds.Domain.Repositories;
 using YourBonoPlatform.Bonds.Domain.Services;
@@ -67,14 +69,14 @@ builder.Services.AddSwaggerGen(
         c.SwaggerDoc("v1",
             new OpenApiInfo
             {
-                Title = "AlquilaFacil.API",
+                Title = "YourBono.API",
                 Version = "v1",
-                Description = "Alquila Facil API",
-                TermsOfService = new Uri("https://alquila-facil.com/tos"),
+                Description = "Your Bono API",
+                TermsOfService = new Uri("https://yourbono.com/tos"),
                 Contact = new OpenApiContact
                 {
-                    Name = "Alquila Facil",
-                    Email = "contact@alquilaf.com"
+                    Name = "Your Bono",
+                    Email = "contact@yourbono.com"
                 },
                 License = new OpenApiLicense
                 {
